@@ -5,16 +5,14 @@
 
 
 
-echo $USER #echos the user
-
-ls /Users/$USER #lists all folder withing the users root 
+#$HOME IS YOUR HOME DIR
 
 
 echo Enter directory path to place folders "(Example: Week_1/apples/)"
 read DIR
 
 
-echo /Users/$USER/$DIR #prints users stated path
+echo $HOME/$DIR #prints users stated path
 
 echo Enter the name of the folder you want to create
 read FolderName
@@ -39,7 +37,7 @@ if [ $NumFiles > 0 ] #if statement checking the number is not 0
 		if(( $Answer = "yes" )) 
 			then
 			#creates a folders but not in stated dir
-			echo mkdir $FolderName{0..$NumFiles} /User/$USER/$DIR 
+			echo mkdir $FolderName{0..$NumFiles} $HOME/$DIR 
 			fi
 			
 
