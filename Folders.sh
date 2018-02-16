@@ -20,7 +20,7 @@ read NumFiles #allows user input
 echo $NumFiles #prints out user input
 
 
-#broken if statement
+
 
 if [ $NumFiles > 0 ] #if statement checking the number is not 0
 	then
@@ -28,7 +28,7 @@ if [ $NumFiles > 0 ] #if statement checking the number is not 0
 		echo Enter yes or no
 		read Answer
 
-		if[$Answer = 'yes' || 'y']
-			mkdir
+		if[ $Answer = "yes" ] #broken if statement
+			
 
 	fi
