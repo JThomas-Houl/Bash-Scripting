@@ -2,6 +2,9 @@
 
 #this is gonna allow you to create files where and how many you wants
 
+
+
+
 echo $USER #echos the user
 
 ls /Users/$USER #lists all folder withing the users root 
@@ -36,7 +39,7 @@ if [ $NumFiles > 0 ] #if statement checking the number is not 0
 		if(( $Answer = "yes" )) 
 			then
 			#creates a folders but not in stated dir
-			echo mkdir $FolderName"{0..$NumFiles}" "/User/$USER/$DIR" 
+			echo mkdir $FolderName{0..$NumFiles} /User/$USER/$DIR 
 			fi
 			
 
