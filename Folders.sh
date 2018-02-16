@@ -1,35 +1,26 @@
 #!/bin/bash
 
-#enter folder location
+#this is gonna allow you to create files where and how many you wants
 
 echo $USER #echos the user
 
 ls /Users/$USER #lists all folder withing the users root 
 
 
-echo Enter directory path "(Example: Week_1/apples/)"
+echo Enter directory path to place folders "(Example: Week_1/apples/)"
 read DIR
 
 
-echo /Users/$USER/$DIR
+echo /Users/$USER/$DIR #prints users stated path
 
 
-
-
-
-
-
-
-
-
-
-
-
-#this is gonna allow you to create files where and how many you wants
 echo How many files do you want? #asks the user how many files they want 
 read NumFiles #allows user input
 
 echo $NumFiles #prints out user input
+
+
+#broken if statement
 
 if [ $NumFiles > 0 ] #if statement checking the number is not 0
 	then
