@@ -33,10 +33,10 @@ if [ $NumFiles > 0 ] #if statement checking the number is not 0
 		echo Enter yes or no
 		read Answer
 
-		if(( $Answer = "yes" )) #broken if statement
+		if(( $Answer = "yes" )) 
 			then
-			#creates folders but not in stated dir
-			echo mkdir $FolderName{0..$NumFiles} /User/$USER/$DIR 
+			#creates a folders but not in stated dir
+			echo mkdir $FolderName"{0..$NumFiles}" "/User/$USER/$DIR" 
 			fi
 			
 
