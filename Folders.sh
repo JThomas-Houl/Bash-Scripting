@@ -13,6 +13,11 @@ read DIR
 
 echo /Users/$USER/$DIR #prints users stated path
 
+echo Enter the name of the folder you want to create
+read FolderName
+
+echo $FolderName
+
 
 echo How many files do you want? #asks the user how many files they want 
 read NumFiles #allows user input
@@ -28,7 +33,11 @@ if [ $NumFiles > 0 ] #if statement checking the number is not 0
 		echo Enter yes or no
 		read Answer
 
-		if[ $Answer = "yes" ] #broken if statement
+		if(( $Answer = "yes" )) #broken if statement
+			then
+			#creates folders but not in stated dir
+			echo mkdir $FolderName{0..$NumFiles} /User/$USER/$DIR 
+			fi
 			
 
 	fi
