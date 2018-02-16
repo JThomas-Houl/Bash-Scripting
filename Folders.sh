@@ -1,14 +1,21 @@
 #!/bin/bash
 
 #enter folder location
-echo Enter Directory path 
+
+echo $USER #echos the user
+
+ls /Users/$USER #lists all folder withing the users root 
+
+
+echo Enter directory path "(Example: Week_1/apples/)"
 read DIR
 
-whoami = UserAccount
 
-echo /Users/$UserAccount/$DIR
+echo /Users/$USER/$DIR
 
-ls /Users/tech-a25/$DIR
+
+
+
 
 
 
